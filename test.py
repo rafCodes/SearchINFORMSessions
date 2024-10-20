@@ -66,7 +66,7 @@ if __name__ == "__main__":
     pdf_path = 'Program Book 10-18.pdf'  # Replace with the path to your PDF file
     pageCountStart = 137
     pageCountEnd = 208
-    document_text = extract_text_from_pdf(pdf_path)
+    document_text = extract_text_from_pdf(pdf_path, pageCountStart, pageCountEnd)
     print("Got text")
 
     # Step 2: Divide the document into sections
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     print("Divided text")
 
     # Step 3: List of keywords to search for
-    keywords = ['my keyword']  # Add more keywords as needed
+    keywords = ["keyword"]  # Add more keywords as needed
     
     # Step 4: Filter sections by keywords
     filtered_sections = filter_sections_by_keywords(sections, keywords)
